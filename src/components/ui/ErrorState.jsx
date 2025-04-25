@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 
 
 const ErrorState = ({ message = 'An error occurred', onRetry }) => {
@@ -15,9 +15,5 @@ const ErrorState = ({ message = 'An error occurred', onRetry }) => {
   );
 };
 
-ErrorState.propTypes = {
-  message: PropTypes.string,
-  onRetry: PropTypes.func
-};
 
 export default ErrorState; 

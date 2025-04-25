@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 
 const Card = ({ children, className = '', onClick }) => {
   return (
@@ -14,10 +14,6 @@ const Card = ({ children, className = '', onClick }) => {
   );
 };
 
-Card.propTypes = {
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string,
-  onClick: PropTypes.func
-};
+
 
 export default Card; 

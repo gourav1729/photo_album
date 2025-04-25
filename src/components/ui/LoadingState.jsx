@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 
 
 const LoadingState = ({ message = 'Loading...' }) => {
@@ -11,8 +11,6 @@ const LoadingState = ({ message = 'Loading...' }) => {
   );
 };
 
-LoadingState.propTypes = {
-  message: PropTypes.string
-};
+
 
 export default LoadingState; 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+
 
 
 const ImageWithFallback = ({ 
@@ -27,11 +27,5 @@ const ImageWithFallback = ({
   );
 };
 
-ImageWithFallback.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  fallbackSrc: PropTypes.string,
-  className: PropTypes.string
-};
 
 export default ImageWithFallback; 
