@@ -1,20 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-/**
- * Formats a breadcrumb segment for display
- * @param {string} segment - URL segment
- * @returns {string} - Formatted segment
- */
+
 const formatBreadcrumbSegment = (segment) => {
   return decodeURIComponent(segment).replace(/-/g, ' ');
 };
 
-/**
- * BreadcrumbItem component for individual breadcrumb links
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const BreadcrumbItem = ({ url, label, isLast }) => (
   <span className="breadcrumb-item">
     {!isLast ? (
@@ -34,10 +26,6 @@ BreadcrumbItem.propTypes = {
   isLast: PropTypes.bool
 };
 
-/**
- * Navbar component with breadcrumb navigation
- * @returns {JSX.Element} - Rendered component
- */
 const Navbar = () => {
   const location = useLocation();
   const pathSegments = location.pathname.split('/').filter(segment => segment);

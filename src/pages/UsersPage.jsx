@@ -4,11 +4,7 @@ import Card from '../components/ui/Card';
 import LoadingState from '../components/ui/LoadingState';
 import ErrorState from '../components/ui/ErrorState';
 
-/**
- * User Card component
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const UserCard = ({ user }) => (
   <Link 
     to={`/${user.name}/${user.id}/albums`} 
@@ -23,10 +19,7 @@ const UserCard = ({ user }) => (
   </Link>
 );
 
-/**
- * UsersPage component - displays all users
- * @returns {JSX.Element} - Rendered component
- */
+
 const UsersPage = () => {
   const { users, loading, error, refetch } = useUsers();
 

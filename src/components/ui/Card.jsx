@@ -1,11 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * Reusable Card component
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
 const Card = ({ children, className = '', onClick }) => {
   return (
     <div 

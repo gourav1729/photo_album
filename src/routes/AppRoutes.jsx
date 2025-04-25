@@ -3,10 +3,7 @@ import UsersPage from '../pages/UsersPage';
 import AlbumsPage from '../pages/AlbumsPage';
 import PhotosPage from '../pages/PhotosPage';
 
-/**
- * Application routes configuration
- * @returns {JSX.Element} - Rendered routes
- */
+
 const AppRoutes = () => {
   return (
     <Routes>

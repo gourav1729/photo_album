@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * Reusable Error State component
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const ErrorState = ({ message = 'An error occurred', onRetry }) => {
   return (
     <div className="error-state">

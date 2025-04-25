@@ -9,3 +9,7 @@ export const API_ROUTES = {
 };
 
 export default API_ROUTES; 
+
+// THIS API IS FOR ALL USERS : https://jsonplaceholder.typicode.com/users
+// THIS API IS FOR ALBUM INSIDE USER: https://jsonplaceholder.typicode.com/albums?userId=4
+// THIS API IS FOR PHOTOS INSIDE USER https://jsonplaceholder.typicode.com/photos?albumId=4

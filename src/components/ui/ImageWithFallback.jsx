@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * Image component with fallback support
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const ImageWithFallback = ({ 
   src, 
   alt, 

@@ -5,11 +5,7 @@ import LoadingState from '../components/ui/LoadingState';
 import ErrorState from '../components/ui/ErrorState';
 import ImageWithFallback from '../components/ui/ImageWithFallback';
 
-/**
- * Photo Card component
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const PhotoCard = ({ photo }) => {
   const handleViewFullSize = (e) => {
     e.preventDefault();
@@ -36,10 +32,7 @@ const PhotoCard = ({ photo }) => {
   );
 };
 
-/**
- * PhotosPage component - displays photos for an album
- * @returns {JSX.Element} - Rendered component
- */
+
 const PhotosPage = () => {
   const { albumTitle } = useParams();
   const location = useLocation();

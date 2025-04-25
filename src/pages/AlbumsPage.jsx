@@ -4,13 +4,9 @@ import Card from '../components/ui/Card';
 import LoadingState from '../components/ui/LoadingState';
 import ErrorState from '../components/ui/ErrorState';
 
-/**
- * Album Card component
- * @param {Object} props - Component props
- * @returns {JSX.Element} - Rendered component
- */
+
 const AlbumCard = ({ album, userName, userId }) => {
-  // Format the album title for use in URL
+  
   const formattedTitle = album.title.toLowerCase().replace(/\s+/g, '-');
 
   return (
@@ -26,10 +22,7 @@ const AlbumCard = ({ album, userName, userId }) => {
   );
 };
 
-/**
- * AlbumsPage component - displays albums for a user
- * @returns {JSX.Element} - Rendered component
- */
+
 const AlbumsPage = () => {
   const { userId, userName } = useParams();
   const { albums, loading, error, refetch } = useAlbums(userId);
